@@ -69,54 +69,49 @@ nav > figure > img {
 /*Fonts and their media queries*/
 h1 {
     font-family: 'Francois One', sans-serif;
+    font-size: 1.6em;
     line-height: 1.4;
     font-weight: 600;
 }
 
-@media all and (min-width: 300px) {
-
-    h1 {
-        font-size: .875em;
-    }
+figcaption {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: .5em;
 }
 
-@media all and (min-width: 400px) {
+
+@media all and (min-width: 300px) {
 
     h1 {
         font-size: 1.2em;
     }
+
+    figcaption {
+        font-size: 0.75em;
+    }
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 600px) {
 
     h1 {
         font-size: 1.4em;
     }
-}
 
-@media all and (min-width: 800px) {
-
-    h1 {
-        font-size: 1.6em;
-    }
-}
-
-figcaption {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    line-height: 1.5;
-    margin: 0.5em 0;
-    padding: 0;
-}
-
-@media (min-width: 300px) {
     figcaption {
         font-size: 0.875em;
     }
 }
 
-@media (min-width: 500px) {
+@media all and (min-width: 900px) {
+
+    h1 {
+        font-size: 1.6em;
+    }
+
     figcaption {
         font-size: 1em;
     }
 }
+
