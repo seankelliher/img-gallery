@@ -67,23 +67,37 @@ nav > figure > img {
 }
 
 /*Fonts and their media queries*/
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    line-height: 1.8;
-    margin: 0;
-    padding: 0;
+h1 {
+    font-family: 'Francois One', sans-serif;
+    line-height: 1.4;
+    font-weight: 600;
 }
 
-@media (min-width: 300px) {
-    h2 {
-        font-size: 1.5em;
+@media all and (min-width: 300px) {
+
+    h1 {
+        font-size: .875em;
     }
 }
 
-@media (min-width: 500px) {
-    h2 {
-        font-size: 1.8em;
+@media all and (min-width: 400px) {
+
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 500px) {
+
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 800px) {
+
+    h1 {
+        font-size: 1.6em;
     }
 }
 
