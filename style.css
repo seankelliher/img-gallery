@@ -1,8 +1,6 @@
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
-    margin: 0;
-    padding: 0;
 }
 
 #container {
@@ -12,54 +10,42 @@ img {
     padding: 0;
 }
 
-/*Clearfix for #container (accomplished with pseudo-element technique)*/
-#container::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
 header {
   width: 100%;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
+/*Container for big image*/
 section {
     width: 100%;
     margin: 0;
     padding: 0;
-    float: left;
+    display: flex;
 }
 
+/*This is the big image*/
+section > figure {
+    width:  100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Container for smaller, thumbnails*/
 nav {
     width: 100%;
     margin: 1em 0;
     padding: 0;
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-/*Clearfix for nav (accomplished with pseudo-element technique)*/
-nav::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-section > figure {
-    width:  100%;
-    margin: 0;
-    padding:  0;
-    float: left;
-}
-
+/*These are the smaller thumbnails*/
 nav > figure {
-    width: 25%;
-    max-width: 150px;
-    margin: 0 8.3333333333333% 0 0;
+    margin: .5em 4.16666666667%;
     padding: 0;
-    float: left;
+    flex: 0 1 25%;
 }
 
 nav > figure > img {
@@ -114,4 +100,3 @@ figcaption {
         font-size: 1em;
     }
 }
-
