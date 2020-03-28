@@ -46,6 +46,37 @@ section.thumbnails-box {
     background: #F5F5F5; /*grey 100*/
 }
 
+/*This is the big image*/
+figure.large {
+    width:  100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    position: relative;
+}
+
+svg {
+    cursor: pointer;
+}
+
+#previous-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFF;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#next-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFF;
+    background: rgba(255, 255, 255, 0.7);
+}
+
 /*Fonts and their media queries*/
 h1 {
     font-family: 'Francois One', sans-serif;
