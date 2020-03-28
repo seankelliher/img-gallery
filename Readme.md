@@ -1,6 +1,6 @@
 # Image Gallery
 
-Image gallery where users click on a thumbnail to view the image in a larger size and with a caption. Through a JavaScript function, text from the image's alt tag is gathered and displayed as the caption.
+Slideshow that has thumbnail versions of the images below the player. You can either click on a thumbnail to display the image in the player. Or, you can click arrows in the player to view the images as a slideshow. In either case, the "selected" image's "alt" tag is displayed as a caption.
 
 ## Authors
 
@@ -25,3 +25,4 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 * Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
 * Design guidance from Google's [Material Design](https://material.io/design).
 * Fonts from [Google Fonts](https://fonts.google.com).
+* Photos were taken by me, Sean Kelliher.
