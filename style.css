@@ -46,27 +46,6 @@ section.thumbnails-box {
     background: #F5F5F5; /*grey 100*/
 }
 
-/*Container for smaller, thumbnails*/
-nav {
-    width: 100%;
-    margin: 1em 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-/*These are the smaller thumbnails*/
-nav > figure {
-    margin: .5em 4.16666666667%;
-    padding: 0;
-    flex: 0 1 25%;
-}
-
-nav > figure > img {
-    cursor: pointer;
-}
-
 /*Fonts and their media queries*/
 h1 {
     font-family: 'Francois One', sans-serif;
