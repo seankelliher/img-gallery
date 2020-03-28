@@ -108,51 +108,35 @@ figure.small:hover {
     cursor: pointer;
 }
 
-/*Fonts and their media queries*/
+/*Fonts*/
 h1 {
-    font-family: 'Francois One', sans-serif;
-    font-size: 1.6em;
-    line-height: 1.4;
-    font-weight: 400;
-}
-
-figcaption {
-    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    font-weight: 400;
-    margin-top: .5em;
+    font-weight: 700;
 }
 
+p {
+    font-family: 'Roboto', serif;
+    line-height: 1.5; /*usually 1.8, but 1.5 okay because caption.*/
+    font-weight: 400;
+}
 
 @media all and (min-width: 300px) {
-
-    h1 {
-        font-size: 1.2em;
+    p {
+        font-size: .9375em; /*15 pixels*/
     }
 
-    figcaption {
-        font-size: 0.75em;
+    h1 {
+        font-size: 1.4375em; /*23 pixels*/
     }
 }
 
 @media all and (min-width: 600px) {
+    p {
+        font-size: 1em; /*16 pixels*/
+    }
 
     h1 {
-        font-size: 1.4em;
-    }
-
-    figcaption {
-        font-size: 0.875em;
-    }
-}
-
-@media all and (min-width: 900px) {
-
-    h1 {
-        font-size: 1.6em;
-    }
-
-    figcaption {
-        font-size: 1em;
+        font-size: 1.5em; /*24 pixels*/
     }
 }
