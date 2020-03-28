@@ -1,13 +1,12 @@
-//The global variable (actually let).
+//Global variable.
 let gallery;
 
-//When the DOM is loaded, invoke the gallery.getFirst function.
+//When DOM loads, invoke function.
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
-    gallery.getFirst();
-
-}); //close DOMContentLoaded function.
+    gallery.getFirstThumb();
+});
 
 //The "gallery" variable (let).
 gallery = {
