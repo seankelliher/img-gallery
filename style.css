@@ -22,19 +22,28 @@ header {
     flex: initial; /*flex: 0 1 auto*/
 }
 
-/*Container for big image*/
+/*Styles for all sections. Padding for section classes set below.*/
 section {
-    width: 100%;
+    width: 95%;
     margin: 0;
-    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
-/*This is the big image*/
-section > figure {
-    width:  100%;
-    margin: 0;
-    padding: 0;
+section.large-box {
+    padding: 1em 2.5% 0 2.5%;
+}
+
+section.caption-box {
+    padding: 0 2.5%;
+}
+
+section.thumbnails-box {
+    padding: .5em 2.5%;
+    background: #F5F5F5; /*grey 100*/
 }
 
 /*Container for smaller, thumbnails*/
