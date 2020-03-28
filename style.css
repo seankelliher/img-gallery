@@ -77,6 +77,37 @@ svg {
     background: rgba(255, 255, 255, 0.7);
 }
 
+/*These are the smaller thumbnails. Width set in media queries below.*/
+figure.small {
+    /*width: 26%;*/
+    margin: .5em 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    background: yellow;
+}
+
+@media all and (min-width: 300px) {
+    figure.small {
+        width: 45%;
+    }
+}
+
+@media all and (min-width: 370px) {
+    figure.small {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 540px) {
+    figure.small {
+        width: 26%;
+    }
+}
+
+figure.small:hover {
+    cursor: pointer;
+}
+
 /*Fonts and their media queries*/
 h1 {
     font-family: 'Francois One', sans-serif;
