@@ -11,33 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
 //The "gallery" variable (let).
 gallery = {
 
-    getFirst: function () {
+    getFirstThumb: function () {
         "use strict";
 
-         //Retrieve the first small image on the page.
-        const first = document.getElementById("first-small");
+        //Get first image with figure "small" class.
+        const image = document.querySelector("figure.small img");
 
-        //Retrieve its source and alt description.
-        const firstSrc = first.src;
-        const firstAlt = first.alt;
-
-        //Take the source and remove the last seven spaces ("-sm.jpg").
-        //This is the source for its larger version.
-        const firstLarge = firstSrc.substr(0, firstSrc.length - 7) + ".jpg";
-
-        //Retrieve the placeholders for the large image and its caption.
-        const large = document.getElementById("large");
-        const caption = document.getElementById("caption");
-
-        //Place the large image's source, alt, and caption.
-        //The caption is the "alt" description just placed in the figcaption.
-        large.src = firstLarge;
-        large.alt = firstAlt;
-        caption.textContent = firstAlt;
-
-        //Invoke the getClicked function.
-        //Pass along "large" and "caption" as parameters.
-        gallery.getClicked(large, caption);
+        //Invoke next functions.
+        gallery.placeResult(image);
+        gallery.getClickedThumb();
+        gallery.getClickedArrow();
     },
 
     //Receive the "large" and "caption" parameters from the getFirst function.
