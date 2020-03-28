@@ -23,32 +23,22 @@ gallery = {
         gallery.getClickedArrow();
     },
 
-    //Receive the "large" and "caption" parameters from the getFirst function.
-    getClicked: function (lar, cap) {
+    getClickedThumb: function () {
         "use strict";
 
-        //Get the nav.
-        const nav = document.querySelector("nav");
+        //Get the "gallery" section.
+        const thumbnails = document.querySelector("section.thumbnails-box");
 
-        //Monitor nav. If figure is clicked, invoke function.
-        nav.addEventListener("click", function (event) {
+        //Add event listener. When user clicks, do this.
+        thumbnails.addEventListener("click", function (event) {
 
-            if (event.target.parentNode.nodeName === "FIGURE") {
+            if (event.target.parentElement.className === "small") {
 
-                //Retrieve the clicked image's source and alt description.
-                const clkSrc = event.target.src;
-                const clkAlt = event.target.alt;
-
-                //Like above - remove the last seven spaces for larger imgage.
-                const clkLg = clkSrc.substr(0, clkSrc.length - 7) + ".jpg";
-
-                //Place the large image's source, alt, and caption.
-                //Caption is the "alt" description placed in the figcaption.
-                lar.src = clkLg;
-                lar.alt = clkAlt;
-                cap.textContent = clkAlt;
+                //Get the event target. Invoke next function.
+                const image = event.target;
+                gallery.placeResult(image);
             }
         });
-    } //close getClicked function.
+    },
 
 }; //close "gallery" variable (let).
