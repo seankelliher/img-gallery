@@ -9,12 +9,17 @@ img {
     max-width: 600px;
     margin: 0 auto;
     padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
 header {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    width: 95%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
 }
 
 /*Container for big image*/
