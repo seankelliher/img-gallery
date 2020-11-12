@@ -1,28 +1,26 @@
-# Image Gallery
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/img-gallery?style=flat-square)](/LICENSE.txt)
+## Image Gallery
 
-Slideshow that has thumbnail versions of the images below the player. You can either click on a thumbnail to display the image in the player. Or, you can click arrows in the player to view the images as a slideshow. In either case, the "selected" image's "alt" tag is displayed as a caption.
+Slide carousel with thumbnails and "advance/retreat" arrows.
 
-## Authors
+## Project Screen Shot
 
-* **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
+![screen shot of project](/screenshots/img-gallery-screenshot1.jpg)
 
-## Deployment
+## Installation and Setup Instructions
 
-All you need is a web browser. Code works in a local or remote environment.
+This is a static component. All you need is a web browser.
 
-## Built With
+## Reflection
 
-* JavaScript
-* CSS
-* HTML
+I wanted to build (from scratch) a slide carousel that accommodates different viewing patterns and did not rely on a library such as jQuery. This carousel uses only "vanilla JavaScript." It features a main player and a gallery of thumbnail images - one for each slide in the carousel - below it.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+Users can click a thumbnail to immediately view a specific slide in the carousel. They can also use the main player's "advance" and "retreat" arrows to view the entire carousel sequentially. Text is pulled from the selected image's "alt" tag and displayed as a caption below the main player.
 
 ## Acknowledgments
 
-* Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
+* Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Design guidance from Google's [Material Design](https://material.io/design).
 * Fonts from [Google Fonts](https://fonts.google.com).
-* Photos were taken by me, Sean Kelliher.
+* Shields from [Shields](https://shields.io).
+* Photos by Sean Kelliher (me).
