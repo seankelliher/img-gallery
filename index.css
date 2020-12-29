@@ -16,15 +16,15 @@ img {
 }
 
 header {
-    width: 95%;
+    width: 90%;
     margin: 0;
-    padding: 1em 2.5%;
+    padding: 1em 5%;
     flex: initial; /*flex: 0 1 auto*/
 }
 
 /*Styles for all sections. Padding for section classes set below.*/
 section {
-    width: 95%;
+    width: 90%;
     margin: 0;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
@@ -34,15 +34,15 @@ section {
 }
 
 section.large-box {
-    padding: 1em 2.5% 0 2.5%;
+    padding: 1em 5% 0 5%;
 }
 
 section.caption-box {
-    padding: 0 2.5%;
+    padding: 0 5%;
 }
 
 section.thumbnails-box {
-    padding: .5em 2.5%;
+    padding: .5em 5%;
     background: #F5F5F5; /*grey 100*/
 }
 
@@ -79,7 +79,6 @@ svg {
 
 /*These are the smaller thumbnails. Width set in media queries below.*/
 figure.small {
-    /*width: 26%;*/
     margin: .5em 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
