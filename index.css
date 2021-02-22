@@ -64,7 +64,6 @@ svg {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: #FFF;
     background: rgba(255, 255, 255, 0.7);
 }
 
@@ -73,7 +72,6 @@ svg {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: #FFF;
     background: rgba(255, 255, 255, 0.7);
 }
 
