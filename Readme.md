@@ -22,6 +22,5 @@ Users can click a thumbnail to immediately view a specific slide in the carousel
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * JavaScript guidance from [JSLint](http://jslint.com).
 * Design guidance from Google's [Material Design](https://material.io/design).
-* Fonts from [Google Fonts](https://fonts.google.com).
 * Shields from [Shields](https://shields.io).
 * Photos by Sean Kelliher (me).
