@@ -5,7 +5,8 @@ Slide carousel with thumbnails and "advance/retreat" arrows.
 
 ## Project Screen Shot
 
-![screen shot of project](/screenshots/img-gallery-screenshot1.jpg)
+* Starting view - with first image displayed.
+![screen shot of project](/screenshots/img-gallery-screenshot1.png?s=600)
 
 ## Installation and Setup Instructions
 
