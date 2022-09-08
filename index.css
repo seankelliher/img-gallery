@@ -11,30 +11,30 @@ img {
     padding: 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 header {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
 }
 
-/*Styles for all sections. Padding for section classes set below.*/
+/* Styles for all sections. Padding for section classes set below. */
 section {
     width: 90%;
     margin: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: space-between; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 section.large-box {
-    padding: 1em 5% 0 5%;
+    padding: 1em 5% 0; /* longhand is 1em 5% 0 5% */
 }
 
 section.caption-box {
@@ -42,16 +42,16 @@ section.caption-box {
 }
 
 section.thumbnails-box {
-    padding: .5em 5%;
-    background: #F5F5F5; /*grey 100*/
+    padding: 0.5em 5%;
+    background: #f5f5f5; /* grey 100 */
 }
 
-/*This is the big image*/
+/* This is the big image */
 figure.large {
-    width:  100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     position: relative;
 }
 
@@ -64,7 +64,7 @@ svg {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255 255 255 / 70%);
 }
 
 #next-arrow {
@@ -72,14 +72,14 @@ svg {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255 255 255 / 70%);
 }
 
-/*These are the smaller thumbnails. Width set in media queries below.*/
+/* These are the smaller thumbnails. Width set in media queries below. */
 figure.small {
-    margin: .5em 0;
+    margin: 0.5em 0;
     padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     background: yellow;
 }
 
@@ -105,7 +105,7 @@ figure.small:hover {
     cursor: pointer;
 }
 
-/*Fonts*/
+/* Fonts */
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -114,13 +114,13 @@ h1 {
 
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5; /*usually 1.8, but 1.5 okay because caption.*/
+    line-height: 1.5; /* usually 1.8, but 1.5 okay because caption. */
     font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
     p {
-        font-size: .875em;
+        font-size: 0.875em;
     }
 
     h1 {
@@ -130,7 +130,7 @@ p {
 
 @media all and (min-width: 400px) {
     p {
-        font-size: .9375em;
+        font-size: 0.9375em;
     }
 
     h1 {
