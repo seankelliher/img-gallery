@@ -3,47 +3,66 @@ import {placeResult} from "./results.js";
 function getClickedArrow() {
     "use strict";
 
-    //Get the figure class "large" element.
+    // Get the figure class "large" element.
     const large = document.querySelector("figure.large");
 
-    //Add an event listener.
-    large.addEventListener("click", function (event) {
+    // Arrow variable.
+    let arrow;
 
-        //Get the img within figure class "large".
+    // Monitor it for click events.
+    large.addEventListener("click", function (event) {
+        arrow = event.target.id;
+        processEvent(arrow);
+    });
+
+    // Monitor it for keyup event.
+    // Note: So tabbing works properly, a path in the SVG element is tabindex=0.
+    // Therefore, for key events, we get and pass the parentElement, SVG.
+    large.addEventListener("keyup", function (event) {
+        if (event.code === "Enter") {
+            arrow = event.target.parentElement.id;
+            processEvent(arrow);
+        }
+    });
+
+    function processEvent(arrow) {
+
+        // Get the img within figure class "large".
         const largeImage = large.querySelector("img");
 
-        //Get its source. Adjust source to add "-sm.jpg".
+        // Get its source. Adjust source to add "-sm.jpg".
         const source = largeImage.src;
         const sourceAdj = source.substr(0, source.length - 4) + "-sm.jpg";
 
-        //Gather all the figure class "small" elements.
+        // Gather all the figure class "small" elements.
         const images = document.querySelectorAll("figure.small img");
 
-        //Convert to "real array" (works without this step too).
+        // Convert to "real array" (works without this step too).
         const imagesArray = Array.from(images);
 
-        //Run all figure class "small" elements through a loop.
-        //Push their source to a new array named "basket".
+        // Run all figure class "small" elements through a loop.
+        // Push their source to a new array named "basket".
         const basket = [];
 
         imagesArray.forEach(function (item) {
             basket.push(item.src);
         });
 
-        //Get the array length.
+        // Get the array length.
         const length = basket.length;
 
-        //Get position of "selected" image within array.
+        // Get position of "selected" image within array.
         const io = basket.indexOf(sourceAdj);
 
-        //Mutable image variable.
+        // Mutable image variable.
         let image;
 
-        //Clicking previous/next arrow, moves you down/up in array.
-        //But it's "circular".
-        //The item before the first item is the last item.
-        //The item after the last item is the first item.
-        if (event.target.id === "previous-arrow") {
+        // Clicking previous/next arrow, moves you down/up in array.
+        // But it's "circular".
+        // The item before the first item is the last item.
+        // The item after the last item is the first item.
+
+        if (arrow === "previous-arrow") {
             if (io === 0) {
                 image = imagesArray[length - 1];
                 placeResult(image);
@@ -51,7 +70,7 @@ function getClickedArrow() {
                 image = imagesArray[io - 1];
                 placeResult(image);
             }
-        } else if (event.target.id === "next-arrow") {
+        } else if (arrow === "next-arrow") {
             if (io === length - 1) {
                 image = imagesArray[0];
                 placeResult(image);
@@ -60,7 +79,7 @@ function getClickedArrow() {
                 placeResult(image);
             }
         }
-    });
+    }
 }
 
 export {getClickedArrow};
