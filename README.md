@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/img-gallery?style=flat-square)](/LICENSE.txt)
 ## Image Gallery
 
-Slide carousel with thumbnails and "advance/retreat" arrows.
+Slide carousel with thumbnails and "advance/retreat" arrows. [View working component](https://seankelliher.github.io/img-gallery/).
 
 ## Project Screen Shot
 
