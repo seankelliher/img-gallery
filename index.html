@@ -1,75 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-
-        <title>Sean Kelliher - Image Gallery</title>
-
-        <meta name="description" content="Add description for production model">
-        <meta name="robots" content="noindex">
-
-        <!-- Keeping favicons simple. Can add more for production model. -->
-        <link rel="icon" href="favicon.ico" sizes="any"> <!-- 32×32 -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- 180×180 -->
-
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-
-    <body>
-
-        <div id="container">
-
-            <section class="large-box">
-
-                <figure class="large">
-                    <img src="" alt="">
-
-                    <svg id="previous-arrow" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path pointer-events="none" d="M0 0h24v24H0z" fill="none"/><path pointer-events="none" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" tabindex="0"/></svg>
-
-                    <svg id="next-arrow" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path pointer-events="none" d="M0 0h24v24H0z" fill="none"/><path pointer-events="none" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" tabindex="0"/></svg>
-
-                </figure>
-
-            </section>
-
-            <section class="caption-box">
-                <p id="caption"></p>
-            </section>
-
-            <section class="thumbnails-box">
-
-                <figure class="small" tabindex="0">
-                    <img src="images/swans-island-ferry-sm.jpg" alt="On the ferry from the mainland town of Bass Harbor to the island of Swan's Island in Maine.">
-                </figure>
-
-                <figure class="small" tabindex="0">
-                    <img src="images/supreme-court-sm.jpg" alt="Outside the Supreme Court building in Washington, DC. Visitors are amazed that you can walk right up to the front door.">
-                </figure>
-
-                <figure class="small" tabindex="0">
-                    <img src="images/summer-shower-sm.jpg" alt="Beachgoers cool off under an outdoor shower in Cape Cod, Massachusetts. The shower is shut off after Labor Day.">
-                </figure>
-
-                <figure class="small" tabindex="0">
-                    <img src="images/tree-road-sm.jpg" alt="Rays of the late afternoon sun reflect on tree leaves in a town on the Gulf Coast of Florida - a popular spot for northerners escaping their winter cold.">
-                </figure>
-
-                <figure class="small" tabindex="0">
-                    <img src="images/grand-teton-sm.jpg" alt="The end of summer and the beginning of autumn on display at the Grand Teton Mountain Range in Jackson, Wyoming.">
-                </figure>
-
-                <figure class="small" tabindex="0">
-                    <img src="images/flowers-river-sm.jpg" alt="With winter receding and spring coming into its own, blossoms bloom on a tree along the edge of the Hudson River in New York City.">
-                </figure>
-
-            </section>
-
-        </div> <!--close #container-->
-
-        <script type="module" src="index.js"></script>
-
-    </body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <!-- Keeping favicons simple. Can add more for production model. -->
+    <link rel="icon" href="/favicon.ico" sizes="any"> <!-- 32×32 -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <!-- 180×180 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
