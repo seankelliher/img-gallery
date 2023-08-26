@@ -1,0 +1,118 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
+}
+
+/* Section and its classes */
+section {
+    width: 95%;
+    margin: 0;
+    background: #f1f0f4; /* neutral 95 */
+    flex: initial; /* flex: 0 1 auto */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /* main axis */
+    align-items: flex-start; /* cross axis */
+}
+
+section.large-box {
+    padding: 1em 2.5% 0; /* longhand is 1em 5% 0 5% */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+section.caption-box {
+    height: 4.5em;
+    padding: 0 2.5%;
+}
+
+section.thumbnails-box {
+    padding: 0.5em 2.5%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Figure and elements within it */
+figure.large {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /* flex: 0 1 auto */
+    position: relative;
+}
+
+svg {
+    cursor: pointer;
+}
+
+#previous-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(252 252 255 / 70%);
+}
+
+#next-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(252 252 255 / 70%);
+}
+
+figure.small {
+    width: 30%;
+    margin: 0.5em 0;
+    padding: 0;
+    background: #001d33;  /* very dark blue */
+    flex: initial; /* flex: 0 1 auto */
+}
+
+figure.small:hover {
+    cursor: pointer;
+}
+
+/* Fonts */
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5; /* usually 1.8, but 1.5 okay because caption. */
+    font-weight: 400;
+    color: #1a1c1e;
+}
+
+@media (width >= 300px) and (width <= 399px) {
+    p {
+        font-size: 0.8125em; /* 13px */
+    }
+}
+
+@media (width >= 400px) and (width <= 499px) {
+    p {
+        font-size: 0.875em; /* 14px */
+    }
+}
+
+@media (width >= 500px) and (width <= 599px) {
+    p {
+        font-size: 0.9375em; /* 15px */
+    }
+}
+
+@media (width >= 600px) {
+    p {
+        font-size: 1em; /* 16px */
+    }
+}
