@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/img-gallery?style=flat-square)](/LICENSE.txt)
 ## Image Gallery
 
-Image gallery carousel, built with Vue.js. [View working component](https://seankelliher-img-gallery.netlify.app).
+Image gallery carousel, built with Vue.js. [View working component](https://sean-kelliher-img-gallery.netlify.app).
 
 ## Project Screen Shot
 
