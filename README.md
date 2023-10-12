@@ -3,6 +3,10 @@
 
 Image gallery carousel, built with Vue.js. [View working component](https://sean-kelliher-img-gallery.netlify.app).
 
+## Project Status
+
+Next steps, I want to do more extensive accessibility and browser testing.
+
 ## Project Screen Shot
 
 * Starting view - with first image displayed.
