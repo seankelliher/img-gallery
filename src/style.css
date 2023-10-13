@@ -93,19 +93,19 @@ p {
     color: #1a1c1e;
 }
 
-@media (width >= 300px) and (width <= 399px) {
+@media (300px >= width <= 399px) {
     p {
         font-size: 0.8125em; /* 13px */
     }
 }
 
-@media (width >= 400px) and (width <= 499px) {
+@media (400px >= width <= 499px) {
     p {
         font-size: 0.875em; /* 14px */
     }
 }
 
-@media (width >= 500px) and (width <= 599px) {
+@media (500px >= width <= 599px) {
     p {
         font-size: 0.9375em; /* 15px */
     }
