@@ -1,7 +1,10 @@
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /* main axis */
+    align-items: center; /* cross axis */
 }
 
 #container {
@@ -9,6 +12,7 @@ img {
     max-width: 600px;
     margin: 0 auto;
     padding: 0;
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
@@ -51,6 +55,12 @@ figure.large {
     padding: 0;
     flex: initial; /* flex: 0 1 auto */
     position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 svg {
