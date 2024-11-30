@@ -1,3 +1,8 @@
+/* @link https://utopia.fyi/type/calculator?c=320,13,1.125,600,16,1.125,0,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+:root {
+  --fs-0: clamp(0.8125rem, 0.5982rem + 1.0714vw, 1rem);
+}
+
 #app {
     width: 100%;
     height: 100vh;
@@ -98,31 +103,8 @@ figure.small:hover {
 /* Fonts */
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5; /* usually 1.8, but 1.5 okay because caption. */
+    font-size: var(--fs-0);
+    line-height: 1.5;
     font-weight: 400;
     color: #1a1c1e;
-}
-
-@media (min-width: 300px) and (max-width: 399px) {
-    p {
-        font-size: 0.8125em; /* 13px */
-    }
-}
-
-@media (min-width: 400px) and (max-width: 499px) {
-    p {
-        font-size: 0.875em; /* 14px */
-    }
-}
-
-@media (min-width: 500px) and (max-width: 599px) {
-    p {
-        font-size: 0.9375em; /* 15px */
-    }
-}
-
-@media (min-width: 600px) {
-    p {
-        font-size: 1em; /* 16px */
-    }
 }
