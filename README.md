@@ -39,5 +39,7 @@ The gallery is accessible as well. All elements that are "clickable" can also be
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
 * Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
 * Design guidance from Google's [Material Design](https://material.io/design).
+* Fonts from [Google Fonts](https://fonts.google.com).
+* Fluid typography guidance from [Utopia](https://utopia.fyi).
 * Shields from [Shields](https://shields.io).
 * Photos by Sean Kelliher (me).
