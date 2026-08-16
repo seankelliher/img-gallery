@@ -1,15 +1,21 @@
-/* @link https://utopia.fyi/type/calculator?c=320,13,1.125,600,16,1.125,0,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
-  --fs-0: clamp(0.8125rem, 0.5982rem + 1.0714vw, 1rem);
+    --text-primary: #161616; /* Gray 100 */
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Centers gallery vertically on long screens */
 #app {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
-    align-items: center; /* cross axis */
+    flex-flow: column nowrap;
+    justify-content: center; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 #container {
@@ -17,18 +23,17 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 0;
-    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
 }
 
-/* Section and its classes */
-section {
-    width: 95%;
+/* Elements for the large image */
+section.large-box {
+    width: 100%;
     margin: 0;
-    background: #f1f0f4; /* neutral 95 */
+    padding: 0;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
@@ -36,24 +41,6 @@ section {
     align-items: flex-start; /* cross axis */
 }
 
-section.large-box {
-    padding: 1em 2.5% 0; /* longhand is 1em 5% 0 5% */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-section.caption-box {
-    height: 4.5em;
-    padding: 0 2.5%;
-}
-
-section.thumbnails-box {
-    padding: 0.5em 2.5%;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-/* Figure and elements within it */
 figure.large {
     width: 100%;
     margin: 0;
@@ -62,10 +49,19 @@ figure.large {
     position: relative;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+figcaption {
+    width: 100%;
+    margin: 0;
+    padding: 0.5em 0;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 0.875em; /* 14 px */
+    line-height: 1.5;
+    color: var(--text-primary);
 }
 
 svg {
@@ -75,39 +71,45 @@ svg {
 #previous-arrow {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(252 252 255 / 70%);
+    background: rgb(252 252 255 / 70%);
 }
 
 #next-arrow {
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(252 252 255 / 70%);
+    background: rgb(252 252 255 / 70%);
+}
+
+/* Media queries to position arrows */
+@media (min-width: 300px) and (max-width: 599px) {
+    #previous-arrow, #next-arrow {
+        top: calc(33vw - 12px) /* image height 67vw, icon height 24px */
+    }
+}
+
+@media (min-width: 600px) {
+    #previous-arrow, #next-arrow {
+        top: 188px; /* image height 400px, icon height 24px */
+    }
+}
+
+/* Elements for the small thumbnail images */
+section.thumbnails-box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1em;  /* column-gap + row-gap */
 }
 
 figure.small {
-    width: 30%;
-    margin: 0.5em 0;
+    width: 100%;
+    margin: 0;
     padding: 0;
-    background: #001d33;  /* very dark blue */
-    flex: initial; /* flex: 0 1 auto */
 }
 
 figure.small:hover {
     cursor: pointer;
-}
-
-/* Fonts */
-p {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    font-size: var(--fs-0);
-    line-height: 1.5;
-    color: #1a1c1e;
 }
